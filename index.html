@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Novosti</title>
-</head>
-<body>
-  <img src="./Slike/head_logo.png" alt="Slika headera">
-  <p>Korisnik: </p>
-  <p>Poduzeće: </p>
-  <p>Partner: </p>
-  <a href="#">GoSoft Web</a>
-  <a href="#">Potpora</a>
-  <a href="#">Projekti - grupni rad</a>
-  <a href="#">Projekt (WBS) zadatak</a>
-  <a href="#">Poruke</a>
-  
-  
-  <ul>
-    <li>Favorites</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novosti</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <img src="./Slike/head_logo.png" alt="Slika headera" />
+    <p>Korisnik:</p>
+    <p>Poduzeće:</p>
+    <p>Partner:</p>
+    <a href="#">GoSoft Web</a>
+    <a href="#">Potpora</a>
+    <a href="#">Projekti - grupni rad</a>
+    <a href="#">Projekt (WBS) zadatak</a>
+    <a href="#">Poruke</a>
+
+    <ul>
+      <li>Favorites</li>
       <ul>
         <li>GoSoft - Web</li>
       </ul>
-    <li>Projekti - grupni rad</li>
+      <li>Projekti - grupni rad</li>
       <ul>
         <li>Projekt (WBS) zadatak</li>
-          <ul>
-            <li>Poslovi</li>
-            <li>Projekti</li>
-            <li>Radni nalozi</li>
-            <li>Grupni rad (MPS)</li>
-          </ul>
+        <ul>
+          <li>Poslovi</li>
+          <li>Projekti</li>
+          <li>Radni nalozi</li>
+          <li>Grupni rad (MPS)</li>
+        </ul>
 
         <li>Rad</li>
-          <ul>
-            <li>Pregled</li>
-            <li>Pregled rad/prisutnost</li>
-          </ul>
+        <ul>
+          <li>Pregled</li>
+          <li>Pregled rad/prisutnost</li>
+        </ul>
 
         <li>Korisnici</li>
-          <ul>
-            <li>Kontakt - osobe</li>
-          </ul>
+        <ul>
+          <li>Kontakt - osobe</li>
+        </ul>
 
         <li>Partneri</li>
 
         <li>Novosti</li>
 
         <li>Poruke</li>
-          <ul>
-            <li>Zamjene</li>
-          </ul>
+        <ul>
+          <li>Zamjene</li>
+        </ul>
 
         <li>Traženje</li>
 
         <li>Evidencija prisutnosti</li>
 
         <li>Struktura baze</li>
-          <ul>
-            <li>Podaci poduzeća</li>
-          </ul>
+        <ul>
+          <li>Podaci poduzeća</li>
+        </ul>
 
         <li>Datoteke</li>
 
@@ -68,10 +68,93 @@
         <ul>
           <li>Statistika telefonskih poziva</li>
         </ul>
-
       </ul>
-  </ul>
+    </ul>
 
+    <form action="">
+      <button type="submit">Pročitaj</button>
+      <br />
+      <p>Pogled</p>
+      <select name="pogled" id="">
+        <option value="Novosti_goinfo">Novosti - Goinfo (*)</option>
+        <option value="Novosti">Novosti</option>
+        <option value="Sve">Sve</option>
+        <option value="Moje_novosti">Moje novosti (*)</option>
+      </select>
+      <br />
+      <label for="datum">Datum:</label><br />
+      <input type="text" id="datum" name="datum" /><br />
+      <br />
+      <label for="naziv">Naziv:</label><br />
+      <input type="text" id="naziv" name="naziv" /><br />
+      <br />
+      <label for="sadrzaj">Sadržaj:</label><br />
+      <input type="text" id="sadrzaj" name="sadrzaj" /><br />
+      <br />
+      <p>Područje</p>
+      <select name="pogled" id="">
+        <option value="Sve">- Sve -</option>
+        <option value="Opcenito">Općenito</option>
+        <option value="Proizovdnja">Proizvodnja</option>
+        <option value="Komercijala">Komercijala</option>
+        <option value="Racunovodstvo">Računovodstvo</option>
+      </select>
+    </form>
 
-</body>
+    <table>
+      <th>!</th>
+      <th>Datum</th>
+      <th>Sadržaj</th>
+      <th>Privitak</th>
+
+      <tr>
+        <td>Ključ</td>
+        <td>15.02.2021</td>
+        <td>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          dolores recusandae, nobis tempore quo vel possimus molestiae eaque
+          corrupti quibusdam repudiandae mollitia sit expedita consectetur illo
+          sequi reiciendis? Labore possimus accusantium reiciendis totam autem,
+          aliquam inventore veniam maxime a deleniti!
+        </td>
+        <td>Blank</td>
+      </tr>
+      <tr>
+        <td>Ključ</td>
+        <td>15.02.2021</td>
+        <td>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          dolores recusandae, nobis tempore quo vel possimus molestiae eaque
+          corrupti quibusdam repudiandae mollitia sit expedita consectetur illo
+          sequi reiciendis? Labore possimus accusantium reiciendis totam autem,
+          aliquam inventore veniam maxime a deleniti!
+        </td>
+        <td>Blank</td>
+      </tr>
+      <tr>
+        <td>Ključ</td>
+        <td>15.02.2021</td>
+        <td>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          dolores recusandae, nobis tempore quo vel possimus molestiae eaque
+          corrupti quibusdam repudiandae mollitia sit expedita consectetur illo
+          sequi reiciendis? Labore possimus accusantium reiciendis totam autem,
+          aliquam inventore veniam maxime a deleniti!
+        </td>
+        <td>Blank</td>
+      </tr>
+      <tr>
+        <td>Ključ</td>
+        <td>15.02.2021</td>
+        <td>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          dolores recusandae, nobis tempore quo vel possimus molestiae eaque
+          corrupti quibusdam repudiandae mollitia sit expedita consectetur illo
+          sequi reiciendis? Labore possimus accusantium reiciendis totam autem,
+          aliquam inventore veniam maxime a deleniti!
+        </td>
+        <td>Blank</td>
+      </tr>
+    </table>
+  </body>
 </html>
