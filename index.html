@@ -5,102 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Novosti</title>
+    <script
+      src="https://kit.fontawesome.com/96b5ba6800.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <img src="./Slike/head_logo.png" alt="Slika headera" />
-    <p>Korisnik:</p>
-    <p>Poduzeće:</p>
-    <p>Partner:</p>
-    <a href="#">GoSoft Web</a>
-    <a href="#">Potpora</a>
-    <a href="#">Projekti - grupni rad</a>
-    <a href="#">Projekt (WBS) zadatak</a>
-    <a href="#">Poruke</a>
+    <div class="header">
+      <div class="Picture"><i class="fas fa-bars fa-3x"></i></div>
+      <div class="Logo">
+        <img
+          src="./Slike/head_logo.png"
+          alt="Slika headera"
+          style="height: 50px"
+        />
+      </div>
+      <div class="StupacPrvi">
+        <span id="UmakPrvi">Korisnik:</span>
+        <span id="UmakDrugi">Poduzeće:</span>
+        <span id="UmakTreci">Partner:</span>
+      </div>
 
-    <ul>
-      <li>Favorites</li>
+      <div class="StupacDrugi">
+        <span id="UmakCetvrti">Goinfo d.o.o.</span>
+        <span id="UmakPeti">Godina:</span>
+      </div>
+
+      <div class="poruka"><i class="fas fa-envelope fa-3x"></i></div>
+      <div class="telefon"><i class="fas fa-phone fa-3x"></i></div>
+      <div class="upitnik"><i class="fas fa-question-circle fa-3x"></i></div>
+      <div class="hiza"><i class="fas fa-home fa-3x"></i></div>
+      <div class="onoff"><i class="fas fa-power-off fa-3x"></i></div>
+    </div>
+
+    <div class="topnav">
+      <a href="#">GoSoft Web</a>
+      <a href="#">Potpora</a>
+      <a href="#">Projekti - grupni rad</a>
+      <a href="#">Projekt (WBS) zadatak</a>
+      <a href="#">Poruke</a>
+    </div>
+
+    <div class="column">
       <ul>
-        <li>GoSoft - Web</li>
+        <li>Favorites</li>
+        <ul>
+          <li>GoSoft - Web</li>
+        </ul>
+        <li>Projekti - grupni rad</li>
+        <ul>
+          <li>Projekt (WBS) zadatak</li>
+          <ul>
+            <li>Poslovi</li>
+            <li>Projekti</li>
+            <li>Radni nalozi</li>
+            <li>Grupni rad (MPS)</li>
+          </ul>
+
+          <li>Rad</li>
+          <ul>
+            <li>Pregled</li>
+            <li>Pregled rad/prisutnost</li>
+          </ul>
+
+          <li>Korisnici</li>
+          <ul>
+            <li>Kontakt - osobe</li>
+          </ul>
+
+          <li>Partneri</li>
+
+          <li>Novosti</li>
+
+          <li>Poruke</li>
+          <ul>
+            <li>Zamjene</li>
+          </ul>
+
+          <li>Traženje</li>
+
+          <li>Evidencija prisutnosti</li>
+
+          <li>Struktura baze</li>
+          <ul>
+            <li>Podaci poduzeća</li>
+          </ul>
+
+          <li>Datoteke</li>
+
+          <li>Telefonski imenik</li>
+          <ul>
+            <li>Statistika telefonskih poziva</li>
+          </ul>
+        </ul>
       </ul>
-      <li>Projekti - grupni rad</li>
-      <ul>
-        <li>Projekt (WBS) zadatak</li>
-        <ul>
-          <li>Poslovi</li>
-          <li>Projekti</li>
-          <li>Radni nalozi</li>
-          <li>Grupni rad (MPS)</li>
-        </ul>
-
-        <li>Rad</li>
-        <ul>
-          <li>Pregled</li>
-          <li>Pregled rad/prisutnost</li>
-        </ul>
-
-        <li>Korisnici</li>
-        <ul>
-          <li>Kontakt - osobe</li>
-        </ul>
-
-        <li>Partneri</li>
-
-        <li>Novosti</li>
-
-        <li>Poruke</li>
-        <ul>
-          <li>Zamjene</li>
-        </ul>
-
-        <li>Traženje</li>
-
-        <li>Evidencija prisutnosti</li>
-
-        <li>Struktura baze</li>
-        <ul>
-          <li>Podaci poduzeća</li>
-        </ul>
-
-        <li>Datoteke</li>
-
-        <li>Telefonski imenik</li>
-        <ul>
-          <li>Statistika telefonskih poziva</li>
-        </ul>
-      </ul>
-    </ul>
-
-    <form action="">
-      <button type="submit">Pročitaj</button>
-      <br />
-      <p>Pogled</p>
-      <select name="pogled" id="">
-        <option value="Novosti_goinfo">Novosti - Goinfo (*)</option>
-        <option value="Novosti">Novosti</option>
-        <option value="Sve">Sve</option>
-        <option value="Moje_novosti">Moje novosti (*)</option>
-      </select>
-      <br />
-      <label for="datum">Datum:</label><br />
-      <input type="text" id="datum" name="datum" /><br />
-      <br />
-      <label for="naziv">Naziv:</label><br />
-      <input type="text" id="naziv" name="naziv" /><br />
-      <br />
-      <label for="sadrzaj">Sadržaj:</label><br />
-      <input type="text" id="sadrzaj" name="sadrzaj" /><br />
-      <br />
-      <p>Područje</p>
-      <select name="pogled" id="">
-        <option value="Sve">- Sve -</option>
-        <option value="Opcenito">Općenito</option>
-        <option value="Proizovdnja">Proizvodnja</option>
-        <option value="Komercijala">Komercijala</option>
-        <option value="Racunovodstvo">Računovodstvo</option>
-      </select>
-    </form>
-
+    </div>
+    <div class="senf">
+      <p>Novosti</p>
+      <form action="">
+        <div class="procitaj"><button type="submit">Pročitaj</button></div>
+        <br />
+        <div class="pretrazivanje">
+          <div class="pogled">
+            <p id="textpogled">Pogled</p>
+            <select name="pogled" id="formapogled">
+              <option value="Novosti_goinfo">Novosti - Goinfo (*)</option>
+              <option value="Novosti">Novosti</option>
+              <option value="Sve">Sve</option>
+              <option value="Moje_novosti">Moje novosti (*)</option>
+            </select>
+          </div>
+          <br />
+          <label for="datum">Datum:</label><br />
+          <input type="text" id="datum" name="datum" /><br />
+          <br />
+          <label for="naziv">Naziv:</label><br />
+          <input type="text" id="naziv" name="naziv" /><br />
+          <br />
+          <label for="sadrzaj">Sadržaj:</label><br />
+          <input type="text" id="sadrzaj" name="sadrzaj" /><br />
+          <br />
+          <p>Područje</p>
+          <select name="pogled" id="">
+            <option value="Sve">- Sve -</option>
+            <option value="Opcenito">Općenito</option>
+            <option value="Proizovdnja">Proizvodnja</option>
+            <option value="Komercijala">Komercijala</option>
+            <option value="Racunovodstvo">Računovodstvo</option>
+          </select>
+        </div>
+      </form>
+    </div>
     <table>
       <th>!</th>
       <th>Datum</th>
