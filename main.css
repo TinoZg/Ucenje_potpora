@@ -108,7 +108,7 @@ span {
 }
 .topnav {
   overflow: hidden;
-  background-color: white;
+  background-color: cyan;
 }
 .topnav a {
   float: left;
@@ -132,13 +132,9 @@ span {
   display: table;
   clear: both;
 }
-button {
-  background-color: blue;
-  color: white;
-}
 .pogled {
   position: relative;
-  left: 33%;
+  left: 0;
   height: 80px;
 }
 #textpogled {
@@ -155,4 +151,92 @@ button {
   left: 0;
   bottom: 0;
   height: 35%;
+}
+
+.pencil {
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  top: 60%;
+}
+
+.download {
+  position: absolute;
+  left: 12%;
+  bottom: 0;
+  top: 60%;
+}
+
+.arrows {
+  position: absolute;
+  left: 14%;
+  bottom: 0;
+  top: 60%;
+}
+
+.lista {
+  position: absolute;
+  left: 16%;
+  bottom: 0;
+  top: 60%;
+}
+
+.datum {
+  position: absolute;
+  top: 35%;
+  left: 18%;
+  bottom: 0;
+  height: 35%;
+}
+.naziv {
+  position: absolute;
+  top: 35%;
+  left: 32%;
+  bottom: 0;
+  height: 35%;
+}
+
+.sadrzaj {
+  position: absolute;
+  top: 35%;
+  left: 44%;
+  bottom: 0;
+  height: 35%;
+}
+
+.Koledar {
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+  top: 60%;
+}
+.podrocje {
+  position: absolute;
+  left: 56%;
+  top: 35%;
+}
+.senf {
+  position: relative;
+  background-color: lightgray;
+  left: 33%;
+}
+
+#novosti {
+  position: absolute;
+  left: 0;
+}
+.procitaj button {
+  position: absolute;
+  left: 0;
+  background-color: rgb(101, 101, 250);
+  color: white;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  border-bottom: 1px solid black;
+}
+tr:hover {
+  background-color: darkgray;
 }

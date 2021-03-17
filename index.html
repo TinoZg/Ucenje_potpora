@@ -102,11 +102,10 @@
       </ul>
     </div>
     <div class="senf">
-      <p>Novosti</p>
+      <span id="novosti">Novosti</span><br>
       <form action="">
         <div class="procitaj"><button type="submit">Pročitaj</button></div>
         <br />
-        <div class="pretrazivanje">
           <div class="pogled">
             <p id="textpogled">Pogled</p>
             <select name="pogled" id="formapogled">
@@ -115,25 +114,57 @@
               <option value="Sve">Sve</option>
               <option value="Moje_novosti">Moje novosti (*)</option>
             </select>
+
+            <div class="pencil">
+              <i class="fas fa-pencil-alt"></i>
+            </div>
+
+            <div class="download">
+              <i class="fas fa-download"></i>
+            </div>
+
+            <div class="arrows">
+              <i class="fas fa-arrows-alt"></i>
+            </div>
+
+            <div class="lista">
+              <i class="fas fa-th-list"></i>
+            </div>
+            <div class="datum">          
+              <label for="datum">Datum:</label><br />
+              <input type="text" id="datum" name="datum" /> 
+            </div>
+            <div class="Koledar"><i class="far fa-calendar"></i></div>
+            <div class="naziv">
+              <label for="naziv">Naziv:</label><br />
+              <input type="text" id="naziv" name="naziv" />
+            </div>
+            <div class="sadrzaj">
+              <label for="sadrzaj">Sadržaj:</label><br />
+              <input type="text" id="sadrzaj" name="sadrzaj" />
+            </div>
+
+            <div class="podrocje">
+              <span>Područje</span> <br />  
+              <select name="pogled" id="">
+                <option value="Sve">- Sve -</option>
+                <option value="Opcenito">Općenito</option>
+                <option value="Proizovdnja">Proizvodnja</option>
+                <option value="Komercijala">Komercijala</option>
+                <option value="Racunovodstvo">Računovodstvo</option>
+              </select>
+
+
+
+            </div>
           </div>
-          <br />
-          <label for="datum">Datum:</label><br />
-          <input type="text" id="datum" name="datum" /><br />
-          <br />
-          <label for="naziv">Naziv:</label><br />
-          <input type="text" id="naziv" name="naziv" /><br />
-          <br />
-          <label for="sadrzaj">Sadržaj:</label><br />
-          <input type="text" id="sadrzaj" name="sadrzaj" /><br />
-          <br />
-          <p>Područje</p>
-          <select name="pogled" id="">
-            <option value="Sve">- Sve -</option>
-            <option value="Opcenito">Općenito</option>
-            <option value="Proizovdnja">Proizvodnja</option>
-            <option value="Komercijala">Komercijala</option>
-            <option value="Racunovodstvo">Računovodstvo</option>
-          </select>
+
+
+
+  
+
+        
+          
         </div>
       </form>
     </div>
@@ -151,12 +182,14 @@
           dolores recusandae, nobis tempore quo vel possimus molestiae eaque
           corrupti quibusdam repudiandae mollitia sit expedita consectetur illo
           sequi reiciendis? Labore possimus accusantium reiciendis totam autem,
-          aliquam inventore veniam maxime a deleniti!
+          aliquam inventore veniam maxime a deleniti! e
         </td>
         <td>Blank</td>
       </tr>
+
       <tr>
         <td>Ključ</td>
+
         <td>15.02.2021</td>
         <td>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
